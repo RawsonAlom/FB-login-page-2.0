@@ -109,6 +109,10 @@ section .middle .button button{
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
+    transition: .2s;
+}
+section .middle .button button:hover{
+    background-color: rgb(14, 71, 194);
 }
 section .middle a{
     font-size: 14px;
@@ -116,6 +120,9 @@ section .middle a{
     text-decoration: none;
     color: rgb(21, 21, 21);
     letter-spacing: 1px;
+}
+section .middle a:hover{
+    text-decoration: underline;
 }
 footer{
     width: 100%;
@@ -139,6 +146,7 @@ footer .button button{
     border: 1px solid rgb(0, 80, 253);
     color: rgb(20, 89, 238);
     cursor: pointer;
+
 }
 footer .button .icon i{
 
