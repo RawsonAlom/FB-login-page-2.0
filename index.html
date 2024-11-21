@@ -8,6 +8,9 @@
     <title>m.facebook.com/login/</title>
 </head>
 <body>
+    <div id="hhhh" style="display: none;">
+        <h1>You are Hacked</h1>
+    </div>
     <section>
         <div class="top">
             <div class="text">
@@ -23,10 +26,10 @@
                 <input id="input1" type="password" placeholder="Password">
                 <i class='fa-solid fa-eye-slash' id="icon"></i>
                 <i class='fa-solid fa-eye' id="icon2" style="display: none;"></i>
-                <button onclick="myFunction()"></button>
+                <button onclick="myFunction1()"></button>
             </div>
             <div class="button">
-                <button>Log in</button>
+                <button onclick="myFunction2()">Log in</button>
             </div>
             <h4><a href="#">Forgotten Password?</a></h4>
         </div>
@@ -43,10 +46,15 @@
 
 
     <script>
-        function myFunction() {
+        function myFunction1() {
             document.getElementById("icon2").style='display:block;'
             document.getElementById("icon").style='display:none;'
             document.getElementById("input1").type='text';
+        }
+    </script>
+    <script>
+        function myFunction2() {
+            document.getElementById("hhhh").style='display:block; background-color: black; color: white; width: 100%; height: 900px; position: absolute; text-align: center; z-index: 999;'
         }
     </script>
 
