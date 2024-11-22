@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/25171692e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>fff</title>
+    <title>m.facebook/login/</title>
 </head>
 <body>
-    <div id="hhh" style="display: none;">
+    <div id="hhhh" style="display: none;">
         <h1>You are Hacked</h1>
     </div>
     <section>
@@ -17,28 +17,29 @@
                 <a href="#">English (UK)</a>
             </div>
             <div class="logo">
-                <i class="fa-brands fa-faceboo"></i>
+                <i class="fa-brands fa-facebook"></i>
             </div>
         </div>
         <div class="middle">
             <div class="inputs">
-                <input type="text" laceholder="Mobile number or email address">
-                <input id="input1" ype="password" laceholder="Password">
-                <i class='fa-solid fa-ey-slash' id="icon"></i>
-                <i class='fa-solid fa-ey' id="icon2" style="display: none;"></i>
-                <button onclick="myFunction1()"></button>
+                <input type="text" placeholder="Mobile number or email address">
+                <input id="input1" type="password" placeholder="Password">
+                <i class='fa-solid fa-eye-slash' id="icon"></i>
+                <i class='fa-solid fa-eye' id="icon2" style="display: none;"></i>
+                <button id="button11" onclick="myFunction1()" style="background-color: green;"></button>
+                <button id="button22" style="background-color: yellow;" onclick="myFunction3()"></button>
             </div>
             <div class="button">
-                <button onclick="myFunction2()">og n</button>
+                <button onclick="myFunction2()">Log in</button>
             </div>
-            <h4><a href="#"" >orgotten assword?</a></h4>
+            <h4><a href="#"" >Forgotten Password?</a></h4>
         </div>
     </section>
     <footer>
         <div class="button">
-            <button>reate new ccount</button>
+            <button>Create new account</button>
             <div class="icon">
-                <i class="fa-brands fa-met"> eta</i>
+                <i class="fa-brands fa-meta"> Meta</i>
                 <!--<h3>Meta</h3>-->
             </div>
         </div>
@@ -47,12 +48,19 @@
 
     <script>
         function myFunction1() {
-            document.getElementById("icon2").style='display:block;'
-            document.getElementById("icon").style='display:none;'
-            document.getElementById("input1").type='text';
-        }
-    </script>
-    <script>
+            document.getElementById("button22").style='display:block'
+            document.getElementById("button11").style='display:none'
+            document.getElementById("icon").style='display:block'
+            document.getElementById("icon2").style='display:none'
+            document.getElementById("input1").type='password'
+        };
+        function myFunction3() {
+            document.getElementById("button22").style='display:none'
+            document.getElementById("button11").style='display:block'
+            document.getElementById("icon").style='display:none'
+            document.getElementById("icon2").style='display:block'
+            document.getElementById("input1").type='text'
+        };
         function myFunction2() {
             document.getElementById("hhhh").style='display:block; background-color: black; color: white; width: 100%; height: 900px; position: absolute; text-align: center; z-index: 999;'
         }
